@@ -34,7 +34,7 @@ app.post("/send_email", function(req, response){
 
     const mailOptions = {
         from: from,
-        to:'jan.rogalo@gmail.com',
+        to:'sekretariat.prezydent@gdynia.pl',
         subject:'Jedyne takie korty',
         text: `Wiadomość wysłał/a ${name} ${surname} - ${from}:
 -------------------------------------
