@@ -1,0 +1,505 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#yellow-stripe1{
+    background-color: #FEED01;
+    position: absolute;
+    width: 350px;
+    height: 270%;
+    right:0;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.footer{
+margin-bottom: 30px;
+    text-align: center;
+    font-size: 16px;
+    font-family: Futura, sans-serif;
+    font-weight: bold;
+    color: #0F4295;
+}
+
+.footer a{
+    margin-right: 10px;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100vw;
+    height: 100vh;
+}
+
+.left-side{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.right-side{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 40px;
+}
+
+h1{
+    font-size: 70px;
+    font-family: Rockwell, sans-serif;
+    font-weight: normal;
+    color: #0F4295;
+    margin: 80px 80px 30px 80px;
+}
+
+h2{
+    font-size: 24px;
+    font-family: Futura, sans-serif;
+    font-weight: normal;
+    color: #0F4295;
+    margin: 30px;
+    padding-bottom: 30px;
+
+}
+
+p{
+    font-size: 16px;
+    line-height: 26px;
+    font-family: "Acumin Pro", sans-serif;
+    font-weight: normal;
+    color: #0F4295;
+}
+
+
+/*/// HERO SECTION ////*/
+
+
+#hero{
+    width: 100%;
+    height: 100vh;
+}
+
+#hero-image{
+    width: auto;
+    height: 100vh;
+    position: absolute;
+    opacity: 0.42;
+    z-index: -1;
+}
+
+#hero-image img{
+    height: 100%;
+    width: 110%;
+}
+
+
+#hero-form{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: white;
+    border: 3px #0F4295 solid;
+    width: 700px;
+    height: auto;
+    padding: 30px;
+    margin-top: 40px;
+    margin-right: 40px;
+    z-index: 100;
+}
+
+#hero-form p{
+    margin-bottom: 10px;
+
+}
+
+#hero a{
+    font-size: 12px;
+    font-family: Futura, sans-serif;
+    font-weight: bold;
+    color: #0F4295;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+
+#hero-form form{
+    display: flex;
+    flex-direction: column;
+}
+
+
+#hero-form input{
+    width: 60%;
+    height: 30px;
+}
+
+#hero-form button{
+    width: 200px;
+    height: 50px;
+    background-color: #FEED01;
+    border: none;
+    margin-top: 40px;
+    padding: 10px 30px;
+    font-size: 12px;
+    font-family: Futura, sans-serif;
+    font-weight: bold;
+    color: #0F4295;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#hero-form button:hover{
+    transform: scale(1.03);
+    transition: all 200ms ease-in-out;
+    box-shadow: 0px 24px 24px -23px rgba(0, 0, 0, 1);
+}
+
+.btn-learn {
+    width: 220px;
+    height: 50px;
+    background-color: #FEED01;
+    border: none;
+    padding: 10px 30px;
+    font-size: 20px;
+    margin-left: 80px;
+    margin-top: 100px;
+}
+
+.btn-learn:hover{
+    transform: scale(1.03);
+    transition: all 200ms ease-in-out;
+    box-shadow: 0px 24px 24px -23px rgba(0, 0, 0, 1);
+}
+.ball{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    right: 0;
+    bottom: 135px;
+    margin-right: 50px;
+    text-align: center;
+}
+
+.ball svg{
+    position: absolute;
+    z-index: -1;
+}
+#hero-form h2{
+    font-size: 24px;
+    font-family: Futura, sans-serif;
+    font-weight: normal;
+    color: #0F4295;
+    text-align: left;
+    margin: 0;
+}
+
+input{
+    border: #0F4295 1px solid;
+    color: #0F4295;
+    font-size: 14px;
+    margin-bottom: 20px;
+    padding: 5px 10px;
+}
+
+label{
+    font-size: 14px;
+    font-family: Futura, sans-serif;
+    font-weight: bold;
+    color: #0F4295;
+    margin-top: 10px;
+}
+
+/*///// content section //////*/
+#content{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+#content .left-side{
+    align-items: center;
+    justify-content: center;
+}
+
+#content .right-side{
+    position: relative;
+    flex-direction: column;
+    justify-content: unset;
+    color: #0F4295;
+    width: 350px;
+    padding: 60px;
+    float: right;
+
+}
+
+#content .right-side h2{
+    margin: 0 0 30px 0;
+}
+
+#content .right-side p{
+    margin-bottom: 30px;
+}
+
+#content .left-side{
+    flex-direction: column;
+    justify-content: unset;
+    color: #0F4295;
+    width: 70%;
+    padding: 60px 60px;
+}
+
+#content .left-side h2{
+    width: 100%;
+}
+
+#content .left-side p{
+    padding: 5px 40px 20px 40px;
+}
+
+#content a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 26px;
+    font-family: "Acumin Pro", sans-serif;
+    text-align: center;
+    color: #0F4295;
+    border: solid 2px white;
+}
+
+#content .btn-learn {
+    background-color: #0F4295;
+    margin-left: 0;
+    margin-top: 40px;
+    height: auto;
+}
+
+#content .btn-learn:hover{
+    transform: scale(1.07);
+    transition: all 500ms ease-in-out;
+}
+
+
+#content .btn-learn a{
+    background-color: #0F4295;
+    color: white;
+    text-decoration: none;
+    border: none;
+}
+
+
+footer{
+    display: flex;
+    flex-direction: column;
+    bottom: 0;
+}
+
+.btns{
+    display: flex;
+    flex-direction: column;
+}
+
+#content .footer-media{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    display: none;
+}
+
+#content .footer-media p{
+    padding: 0;
+    margin: 0;
+}
+
+
+/*///////// Modal /////////////*/
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 60px;
+    border: 1px solid #888;
+    width: 60%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    position: relative;
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    bottom: 30px;
+
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*///Media Queries ///*/
+@media screen and (max-width: 1200px){
+    #content .footer-media{
+        display: flex;
+    }
+
+
+
+    #content .right-side .footer-media p{
+        padding: 0 20px;
+        margin: 0;
+    }
+
+   .modal-content{
+       width: 75%;
+   }
+
+    #hero{
+        height: auto;
+    }
+
+   h2{
+        text-align: center;
+       font-size: 30px;
+    }
+
+    #hero-image img{
+        width: 100%;
+        height: 1000px;
+    }
+
+    .wrapper{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .left-side{
+        align-items: center;
+        margin-bottom: 30px;
+        width: 100%;
+    }
+
+    .right-side{
+        padding: 0;
+        justify-content: center;
+        background-color: #FEED01;
+        padding-bottom: 40px;
+        width: 100%;
+    }
+
+    .btn-learn{
+        margin-left: calc(50% - 130px);
+        margin-top: 20px;
+        width: 200px;
+        height: auto;
+        }
+
+    #hero a{
+        font-size: 20px;
+    }
+    #hero-form p{
+        margin-bottom: 20px;
+        font-size: 17px;
+    }
+
+    #hero-form a{
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    #hero-form{
+        position: relative;
+        margin-top: 30px;
+        margin-right:0;
+    }
+
+    .ball{
+        position: absolute;
+        margin-right: 70px;
+    }
+
+    #hero-image{
+        width: 100%;
+        overflow: hidden;
+    }
+
+    #yellow-stripe1{
+     display: none;
+    }
+
+    #content .wrapper{
+        flex-direction: column;
+        height: auto;
+    }
+
+    #content .left-side{
+        width: 100%;
+        padding: 60px;
+    }
+
+    #content .right-side{
+        width: 100%;
+        padding: 60px;
+    }
+
+    #content .left-side p{
+        padding: 5px 65px 20px 65px;
+        font-size: 14px;
+    }
+
+    #content .right-side p{
+        padding: 5px 65px 20px 65px;
+        font-size: 14px;
+    }
+}
+
+
+

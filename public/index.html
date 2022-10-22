@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div id="yellow-stripe1">
+    <div class="footer">
+        <a href="https://www.facebook.com/jedynetakiekorty" class="nav-social-icons" target="_blank">
+        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" fill="#0F4295" width="22px" height="22px" viewBox="0 0 22 22" enable-background="new 0 0 22 22" xml:space="preserve">
+            					<path d="M22,3.667C22,1.74,20.261,0,18.333,0H3.666C1.738,0,0,1.74,0,3.667v14.667C0,20.259,1.738,22,3.666,22H11v-8.311H8.31
+            				v-3.667H11v-1.43c0-2.463,1.85-4.681,4.125-4.681h2.963v3.666h-2.963c-0.324,0-0.704,0.394-0.704,0.984v1.461h3.667v3.667h-3.667
+            				V22h3.912C20.261,22,22,20.259,22,18.333V3.667z"/>
+            </svg></a>
+        <p>Jedyne takie korty. Gdynia, 2022.</p>
+    </div>
+</div>
+<div id="hero-image">
+    <img src="Korty.jpg">
+</div>
+<section id="hero">
+    <div class="wrapper">
+        <div class="left-side">
+            <div class="titles">
+                <h1>JEDYNE TAKIE KORTY!</h1>
+                <h2>Forum Sportowe dla gdyńskiego sportu, nie dla deweloperki</h2>
+                <button class="btn-learn"><a href="#content">Dowiedz się więcej</a></button>
+            </div>
+        </div>
+        <div class="right-side">
+            <div id="hero-form">
+                <h2>Kliknij by wysłać poniższą wiadomość do prezydenta miasta:</h2>
+                <div>
+                    <p>Szanowny Panie Prezydencie,</p>
+                    <p>zwracamy się do Pana z apelem o ochronę dziedzictwa naszego miasta, jakim jest historyczne założenie Forum Sportowego, w tym kortów tenisowych “Arki” oraz “Górki”.</p>
+                    <p>Nadmorskie, najcenniejsze obszary Gdyni wymagają szczególnej troski w obliczu rosnącej presji inwestycyjnej. Forum Sportowe ma znaczenie historyczne, kulturowe, urbanistyczne i krajobrazowe, lecz także bardzo istotne są jego funkcje publiczne - sportowe i rekreacyjne…</p>
+                    <a href="#" id="modalTrigger">(czytaj dalej)</a>
+                </div>
+                <!-- /// modal content ////-->
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <p>Szanowny Panie Prezydencie,</p>
+                        <p>zwracamy się do Pana z apelem o ochronę dziedzictwa naszego miasta, jakim jest historyczne założenie Forum Sportowego, w tym kortów tenisowych “Arki” oraz “Górki”.</p>
+                        <p>Nadmorskie, najcenniejsze obszary Gdyni wymagają szczególnej troski w obliczu rosnącej presji inwestycyjnej. Forum Sportowe ma znaczenie historyczne, kulturowe, urbanistyczne i krajobrazowe, lecz także bardzo istotne są jego funkcje publiczne - sportowe i rekreacyjne.</p>
+                        <p>Funkcje te należy chronić, gdyż stanowią dobro i własność naszej gdyńskiej wspólnoty samorządowej. Nie można pozwolić, by służyły one celom prywatnej, komercyjnej funkcji budowlanej, a tym grożą obecne zapisy planu miejscowego nr 1407 obejmującego ten teren.</p>
+                        <p>Przyszłe pokolenia gdynian zasługują na to, żeby w pełni korzystać z potencjału tego niepowtarzalnego miejsca. Cały teren Forum Sportowego stanowi wartość i zasługuje na ochronę prawną i konserwatorską.</p>
+                        <p>W Urzędzie Miasta istnieją wyspecjalizowane komórki organizacyjne odpowiedzialne za zachowanie gdyńskiego dziedzictwa, z których wsparcia można skorzystać w tej sytuacji. Ma Pan Prezydent po swojej stronie gdyńską społeczność kibiców, organizacje pozarządowe, ludzi sportu i kultury. Nie pozwólmy na to, by prywatne interesy odebrały nam naszą gdyńską tożsamość.</p>
+                        <p>Z poważaniem,</p>
+                        <p>gdynianie i osoby wspierające</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="ball">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="206" height="212.145" viewBox="0 0 206 232.145" transform="scale(.9)">
+                            <g id="Ellipse_1" data-name="Ellipse 1" transform="translate(0 6.145)" fill="#feed01" stroke="#fbee4f" stroke-width="1">
+                                <circle cx="103" cy="103" r="103" stroke="none"/>
+                                <circle cx="103" cy="103" r="102.5" fill="none"/>
+                            </g>
+                            <path id="Path_2" data-name="Path 2" d="M1433.557,864.4C1569.915,838.87,1509.3,727.45,1509.3,727.45" transform="translate(-1428.726 -726.255)" fill="none" stroke="#fff" stroke-width="5"/>
+                            <path id="Path_3" data-name="Path 3" d="M1433.557,859.45c91.724-24.608,50.95-132,50.95-132" transform="translate(1632.847 931.596) rotate(180)" fill="none" stroke="#fff" stroke-width="5"/>
+                        </svg>
+                    </div>
+
+                    <form action="/send_email" method="POST">
+                        <label>Imie:</label>
+                        <input type="text" name="name" id="name" required>
+                        <label>Nazwisko:</label>
+                        <input type="text" name="surname" id="surname" required>
+                        <label>E-mail:</label>
+                        <input type="email" name="from" id="from" required>
+                        <button type="submit" value="Send" onclick="alert('Wiadomość została wysłana!')">Wyślij piłkę!</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="content">
+    <div class="wrapper">
+        <div class="left-side">
+            <h2>Apel do Radnych Miasta Gdyni</h2>
+            <p>Na najbliższej sesji Rady Miasta Gdyni, 26 października 2022 r., planowane jest uchwalenie miejscowego planu zagospodarowania przestrzennego części dzielnic: Wzgórze Św. Maksymiliana, Redłowo i Orłowo w Gdyni, rejon rezerwatu przyrody „Kępa Redłowska” wraz z otoczeniem (projekt planu nr 1407).</p>
+            <p>Obszar objęty projektem planu jest rozległy i dotyczy kilku terenów najbardziej cennych dla mieszkańców Gdyni. Przede wszystkim są to Polanka Redłowska oraz teren Forum Sportowego, którego częścią są korty tenisowe Arki oraz teren po przedwojennym stadionie lekkoatletycznym wraz z boiskiem piłkarskim, na którym do 2000 roku mecze rozgrywał pierwszy zespół Arki Gdynia. Na tym terenie znajduje się również kultowa dla kolejnych pokoleń kibiców piłkarskiej Arki „Górka”, czyli trybuna wykorzystująca naturalnie ukształtowane wzniesienie terenu. Forum Sportowe jest krajobrazowym i urbanistycznym unikatem w skali Polski, podobnie jak jego historyczna wartość kulturotwórcza.</p>
+            <p> Opracowanie projektu planu nr 1407 trwa już 11 lat. W tym czasie powstało w sumie pięć wersji projektu, których treść budziła i nadal budzi wiele kontrowersji. Dopiero na początku 2022 roku władze miasta uległy naciskom mieszkańców oraz organizacji społecznych i zrezygnowały z możliwości budowy hotelu na Polance Redłowskiej. Niestety, miejskie władze wciąż zamierzają wprowadzić regulacje, które w praktyce zakładają intensywną, komercyjną zabudowę terenu obecnych całorocznych kortów tenisowych, będących przede wszystkim miejscem wychowania i szkolenia około 300 dzieci i młodzieży.</p>
+            <p>Zaskakuje upór i determinacja, jakie wykazują władze i urzędnicy, szczególnie począwszy od trzeciej wersji projektu planu z lipca 2020 roku. Wtedy zaczęto zwiększać parametry powierzchni zabudowy (+50% względem poprzednich), zmniejszać minimalne powierzchnie wydzielanych działek ewidencyjnych (w porównaniu – sześciokrotnie) oraz, co najważniejsze, zmieniono przeznaczenie terenu. W obecnej piątej wersji planu dopuszczono na tym terenie usługi turystyki i zdrowia, których realizacja wiąże się z powstaniem intensywnej zabudowy służącej prywatnej i komercyjnej działalności gospodarczej.</p>
+            <p>Wszystko wskazuje na to, że od czasu wydzierżawienia Fundacji NOVA działek miejskich o powierzchni ponad 20 tys. metrów kwadratowych (grudzień 2019 r.), projekt planu w części obejmującej teren kortów został w pełni podporządkowany komercyjnej koncepcji budowy hotelu na około 200 apartamentów. Prezentowana zabudowa całkowicie dewastuje wartości przestrzenne i krajobrazowe oraz praktycznie likwiduje obecną, kontynuowaną od niemal 100 lat, historyczną funkcję tego terenu i istniejącą infrastrukturę sportową. W naszej ocenie całkowicie pominięto wartości historyczne Forum Sportowego, ograniczając się jedynie do powierzchownej wzmianki o – faktycznie pozornej – ochronie konserwatorskiej „Górki” oraz dwóch kortów tenisowych.</p>
+            <p>Dlatego Stowarzyszenie Wszystko dla Gdyni w dniu 12 września br. złożyło do Wojewódzkiego Konserwatora Zabytków obszerny i szczegółowo uzasadniony wniosek o wpis terenu Forum Sportowego do rejestru zabytków. W celu zagwarantowania pełnej transparentności postępowania rejestrowego, w dniu 13 października br. zwróciliśmy się również do Prokuratury Okręgowej w Gdańsku o przystąpienie do tego postępowania. Wykorzystaliśmy zatem dostępne środki prawne, aby kompetentne służby miały wpływ na ukształtowanie przeznaczenia i możliwości zabudowy tego cennego terenu, zapewniając zachowanie jego unikalnych wartości historycznych i użytkowych, które są istotne z punktu widzenia szeroko rozumianego interesu społecznego.</p>
+            <p>Należy podkreślić, że inne miejskie organizacje społeczne i instytucje wspierają nasze działania i w pełni się z nimi identyfikują. Dowodzi to szerokiego społecznego zainteresowania przyszłością tego wyjątkowego obszaru. Zapewniamy, że nie jesteśmy przeciwni zagospodarowaniu tego terenu czy wykorzystaniu w celach inwestycyjnych. Zabiegamy jednak, o to by planowane działania uwzględniały krajobrazowe oraz historyczne wartości i funkcje, dawały realne możliwości kontynuowania działalności sportowej, a ewentualnie powstała zabudowa komercyjna służyła wspieraniu szkolenia dzieci i młodzieży oraz organizowaniu zawodów tenisowych jak najwyższej rangi. Idealnie byłoby wykorzystać „modę na tenis”, jaką stworzyły sukcesy Igi Świątek czy Huberta Hurkacza, oraz przygotować ten unikalnie położony teren na powstanie ośrodka szkolno-treningowego na miarę współczesności, na przykład z udziałem miasta w ramach partnerstwa publiczno-prywatnego. Naszym zdaniem, ta alternatywa jest lepsza dla naszej miejskiej społeczności niż uparte sprzyjanie wyłącznie komercyjnej koncepcji intensywnej zabudowy autorstwa Biura Planowania Przestrzennego Miasta Gdyni.</p>
+        </div>
+        <div class="right-side">
+            <div>
+                <h2>Co jeszcze mogę zrobić? </h2>
+                <p>Wyślij piłkę mailem lub przekaż swojemu radnemu: zostaw ją w kancelarii Urzędu Miasta w Gdyni, przekaż za pomocą urzędowej wrzutni na dokumenty lub nadaj pocztą albo paczkomatem (aleja Marsz. Piłsudskiego 52/54)</p>
+            </div>
+            <div class="btns">
+                <button class="btn-learn"><a href="https://bip.um.gdynia.pl/rada-miasta,1690/radni-viii-kadencji-rady-miasta-gdyni,530980">Swoich radnych znajdziesz tutaj!</a></button>
+                <button class="btn-learn"><a href="#hero">Wyślij piłkę!</a></button>
+            </div>
+            <div class="footer-media">
+                <a href="https://www.facebook.com/jedynetakiekorty" class="nav-social-icons" target="_blank">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" fill="#0F4295" width="22px" height="22px" viewBox="0 0 22 22" enable-background="new 0 0 22 22" xml:space="preserve">
+            					<path d="M22,3.667C22,1.74,20.261,0,18.333,0H3.666C1.738,0,0,1.74,0,3.667v14.667C0,20.259,1.738,22,3.666,22H11v-8.311H8.31
+            				v-3.667H11v-1.43c0-2.463,1.85-4.681,4.125-4.681h2.963v3.666h-2.963c-0.324,0-0.704,0.394-0.704,0.984v1.461h3.667v3.667h-3.667
+            				V22h3.912C20.261,22,22,20.259,22,18.333V3.667z"/>
+            </svg></a>
+                <p>Jedyne takie korty. Gdynia, 2022.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="modal.js"></script>
+<script src="../app.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
